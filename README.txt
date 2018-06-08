@@ -1,1 +1,2 @@
-sudo singularity build biotools.simg biotools.def
+# Singularity config for biotools container
+sudo singularity build biotools.simg Singularity
