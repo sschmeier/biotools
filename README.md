@@ -12,7 +12,11 @@ sudo singularity build biotools.simg Singularity
 The container can alos be downloaded from [Singularity Hub](https://www.singularity-hub.org/) without root access to the local machine like this:
 
 ```bash
-singularity pull sschmeier/biotools:latest 
+singularity pull --name "biotools.simg" sschmeier/biotools:latest 
 ```
 
-However, we will be using the contianer straight from [Singularity Hub](https://www.singularity-hub.org/) in a workflow.
+Then, it can be used, e.g.:
+
+```bash
+singularity exec biotools.simg samtools view -h
+```
